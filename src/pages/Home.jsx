@@ -1,11 +1,15 @@
 import MainVid from "../assets/video/main.mp4";
+import BannerImg from "../components/BannerImg/BannerImg";
 import Hero from "../components/Hero/Hero";
 import Places from "../components/Places/Places";
-
-
+import Poster from "../assets/cover-women.jpg"; 
+import Blogs from "./Blogs";
+import Banner from "../components/Banner/Banner";
+import Banner2 from "../assets/travel-cover2.jpg";
+import Testimonial from "../components/Testimonial/Testimonial";
 const Home = () => {
   return (
-    <div>
+    <>
       <div className="relative h-[700px]">
         <video
           autoPlay
@@ -16,10 +20,15 @@ const Home = () => {
         >
           <source src={MainVid} type="video/mp4" />
         </video>
-        <Hero/>
+        <Hero />
       </div>
-      <Places/>
-    </div>
+      <Places />
+      <BannerImg img={Poster} />
+      <Blogs />
+      <Banner />
+      <BannerImg img={Banner2} />
+      <Testimonial/>
+    </>
   );
 };
 

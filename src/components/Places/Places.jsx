@@ -26,8 +26,8 @@ const PlacesData = [
   },
   {
     img: Img3,
-    title: "",
-    location: "",
+    title: "Jarmany",
+    location: "UK",
     description:
       "The USA offers stunning places to visit, from the Grand Canyon to Times Square. Each destination showcases unique history, culture, and natural beauty.",
     price: 6700,

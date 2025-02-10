@@ -1,11 +1,11 @@
-import React from 'react';
+import BlogsComp from "../components/Blogs/BlogsComp.jsx"
 
 const Blogs = () => {
     return (
         <div>
-            <h1>Blog</h1>
+            <BlogsComp/>
         </div>
     );
-};
+}; 
 
 export default Blogs;

@@ -3,9 +3,10 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Blogs from "./pages/Blogs";
-import BlogsDetails from "./pages/BlogsDetails";
 import PlaceRoute from "./pages/PlaceRoute";
 import NoPage from "./pages/NoPage";
+import BlogsDetails from "./pages/BlogsDetails";
+
 
 // Aos
 // import { useEffect } from "react";
