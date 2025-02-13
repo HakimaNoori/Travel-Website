@@ -1,9 +1,10 @@
 import React from 'react';
+import Places from '../components/Places/Places';
 
 const PlaceRoute = () => {
     return (
-        <div>
-            <h1>Place Rou</h1>
+        <div className='pt-14'>
+            <Places/>
         </div>
     );
 };

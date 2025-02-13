@@ -7,6 +7,7 @@ import Blogs from "./Blogs";
 import Banner from "../components/Banner/Banner";
 import Banner2 from "../assets/travel-cover2.jpg";
 import Testimonial from "../components/Testimonial/Testimonial";
+
 const Home = () => {
   return (
     <>
@@ -28,7 +29,7 @@ const Home = () => {
         <Blogs />
         <Banner />
         <BannerImg img={Banner2} />
-        <Testimonial />
+        <Testimonial/>
       </div>
     </>
   );

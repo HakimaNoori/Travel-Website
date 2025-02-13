@@ -1,18 +1,16 @@
- 
-
 const BannerImg = ({ img }) => {
     const bgImage = {
         backgroundImage: `url(${img})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        height: "400px",
-    }
+        aspectRatio: "16 / 9", // Maintain a 16:9 aspect ratio
+    };
     return (
-      <div
-        data-aos="zoon-in"
-        className="h-[400px] w-full"
-        style={bgImage}
-      ></div>
+        <div
+            data-aos="zoom-in"
+            className="w-full"
+            style={bgImage}
+        ></div>
     );
 };
 

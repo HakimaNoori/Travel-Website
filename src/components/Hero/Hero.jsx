@@ -23,7 +23,7 @@ const Hero = () => {
             data-aos="fade-up"
             data-aos-delay="600"
             className="space-y-4 bg-white rounded-md p-4 relative">
-            <div className="grid grid-cols-1 sm:grid-cols-3 py-3">
+            <div className="grid grid-cols-1 sm:grid-cols-3 py-4">
               <div className="">
                 <label htmlFor="destination" className="opacity-70">
                   Searh your Destination
