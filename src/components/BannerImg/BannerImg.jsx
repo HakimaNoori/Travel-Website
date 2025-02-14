@@ -3,7 +3,7 @@ const BannerImg = ({ img }) => {
         backgroundImage: `url(${img})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        aspectRatio: "16 / 9", // Maintain a 16:9 aspect ratio
+        aspectRatio: "16 / 9",
     };
     return (
         <div

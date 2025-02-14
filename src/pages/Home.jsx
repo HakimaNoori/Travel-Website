@@ -7,8 +7,23 @@ import Blogs from "./Blogs";
 import Banner from "../components/Banner/Banner";
 import Banner2 from "../assets/travel-cover2.jpg";
 import Testimonial from "../components/Testimonial/Testimonial";
+import { useState } from "react";
+import Popup from "../components/Popup/Popup";
+
+// Aos
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+  const [orderPopup, setOrderPopup] = useState(false);
+
+  const handleOrderPopup = () => {
+    setOrderPopup(!orderPopup);
+  };
   return (
     <>
       <div>
@@ -24,12 +39,13 @@ const Home = () => {
           </video>
           <Hero />
         </div>
-        <Places />
+        <Places handleOrderPopup={handleOrderPopup} />
         <BannerImg img={Poster} />
         <Blogs />
         <Banner />
         <BannerImg img={Banner2} />
-        <Testimonial/>
+        <Testimonial />
+        <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
       </div>
     </>
   );

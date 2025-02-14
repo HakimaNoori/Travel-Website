@@ -4,7 +4,7 @@ const BlogsCard = ({ image, date, title, description, author }) => {
   return (
       <Link to={`/blogs/${title}`} onClick={() => {
           window.scrollTo(0,0)
-    }} state={{image}}>
+    }} state={{image, date, title, description, author}}>
       <div className="p-4 shadow-lg transition-all duration-500 hover:shadow-xl">
         <div className="overflow-hidden">
           <img
