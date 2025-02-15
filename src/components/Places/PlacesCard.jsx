@@ -1,4 +1,5 @@
 import { IoLocationSharp } from "react-icons/io5";
+import PropTypes from "prop-types";
 
 const PlacesCard = ({
   img,
@@ -39,6 +40,16 @@ const PlacesCard = ({
       </div>
     </div>
   );
+};
+
+PlacesCard.propTypes = {
+  img: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  type: PropTypes.string.isRequired,
+  handleOrderPopup: PropTypes.func.isRequired,
 };
 
 export default PlacesCard;

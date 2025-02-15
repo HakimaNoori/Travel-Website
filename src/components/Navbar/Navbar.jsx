@@ -1,31 +1,32 @@
 import { Link, NavLink } from "react-router-dom";
-import LogoImg from "../../assets/Logo.png";
+import LogoImg from "@/assets/Logo.png";
 import { FaCaretDown } from "react-icons/fa";
 import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
 import { useState } from "react";
-import ResponsiveMenu from "./ResponsiveMenu"
+import ResponsiveMenu from "./ResponsiveMenu";
 
 const DropdownLinks = [
   {
     name: "Our Services",
-    link: "/#services",
+    link: "#services",
   },
   {
     name: "Top Brands",
-    link: "/#mobile_brands",
+    link: "#mobile_brands",
   },
   {
     name: "Location",
-    link: "/#location",
+    link: "#location",
   },
 ];
 
-const Navbar = ({handleOrderPopup}) => {
+const Navbar = ({ handleOrderPopup }) => {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+
   return (
     <>
       <div className="fixed top-0 right-0 w-full bg-white text-black shadow-sm z-[99999]">
@@ -97,12 +98,22 @@ const Navbar = ({handleOrderPopup}) => {
                       {DropdownLinks.map((data) => {
                         return (
                           <li key={data.name}>
-                            <a
-                              href={data.link}
+                            <Link
+                              to={data.link}
+                              onClick={() => {
+                                const element = document.querySelector(
+                                  data.link
+                                );
+                                if (element) {
+                                  element.scrollIntoView({
+                                    behavior: "smooth",
+                                  });
+                                }
+                              }}
                               className="inline-block w-full rounded-md p-2 hover:bg-primary/20"
                             >
                               {data.name}
-                            </a>
+                            </Link>
                           </li>
                         );
                       })}

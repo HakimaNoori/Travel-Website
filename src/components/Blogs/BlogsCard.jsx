@@ -1,10 +1,13 @@
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const BlogsCard = ({ image, date, title, description, author }) => {
   return (
-      <Link to={`/blogs/${title}`} onClick={() => {
-          window.scrollTo(0,0)
-    }} state={{image, date, title, description, author}}>
+    <Link
+      to={`/blogs/${title}`}
+      onClick={() => window.scrollTo(0, 0)}
+      state={{ image, date, title, description, author }}
+    >
       <div className="p-4 shadow-lg transition-all duration-500 hover:shadow-xl">
         <div className="overflow-hidden">
           <img
@@ -24,6 +27,14 @@ const BlogsCard = ({ image, date, title, description, author }) => {
       </div>
     </Link>
   );
+};
+
+BlogsCard.propTypes = {
+  image: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
 };
 
 export default BlogsCard;
