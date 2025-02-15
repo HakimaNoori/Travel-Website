@@ -1,8 +1,6 @@
-# React + Vite
+# Travel-Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- The website is an attractive travel platform that highlights different destinations, providing a smooth and enjoyable browsing experience. It blends stunning visuals with an intuitive design to inspire travel and simplify trip planning.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Screen-Vedio
+  [screen-capture (4).webm](https://github.com/user-attachments/assets/42a095bc-58ce-42ed-a7db-f4f6a1cde19b)
